@@ -278,17 +278,52 @@ footer {
     color: #FFFFFF;
 }
 .footer_address_text {
+    width: 300px;
+}
+.footer_address_text,
+.footer_address_info {
     color: #5c5c5c;
     font-size: 13px;
+}
+.footer_address_info{
+    display: flex;
+    margin-top: 30px;
+}
+.footer_address_info_left {
+    margin-right: 60px;
+}
+.footer_address_info_right a,
+.footer_tweets_text a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 .footer_address_icons {
     display: flex;
 }
 .footer_address_icon {
+    margin-top: 30px;
     width: 30px;
     height: 30px;
     margin-right: 4px;
     background-color: #2f2f2f;
+}
+.footer_post {
+    width: 300px;
+    margin-bottom: 20px;
+}
+.footer_post_text {
+    font-size: 13px;
+}
+.footer_date {
+    font-size: 12px;
+    color: #0079c7;
+}
+.footer_tweets {
+    margin-bottom: 20px;
+}
+.footer_tweets_text {
+    color: #5c5c5c;
+    font-size: 13px;
 }
 .footer_copy {
     border-top: 1px solid #5c5c5c;
