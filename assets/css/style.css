@@ -211,14 +211,90 @@ article .news_resume {
 
 .appointment_items {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 10px;
     padding-bottom: 10px;
     font-size: 13px;
     border-bottom: 1px solid rgb(159, 167, 159);;
+}
+.appointment_text {
+    margin-bottom: 20px;
 }
 .appointment_icon {
     width: 30px;
     height: 30px;
     background-color: rgb(159, 167, 159);
+}
+.appointment_contact {
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+.flexColumn {
+    flex-direction: column;
+}
+.footer_menu {
+    display: flex;
+}
+.footer_menu1,
+.footer_menu2,
+.footer_menu3 {
+    flex: 1;
+    color: #FFFFFF;
+}
+.footer_menu1 {
+    background-color: #39aae1;
+}
+.footer_menu2 {
+    background-color: #0079c7;
+}
+.footer_menu3 {
+    background-color: #2b4c99;
+}
+.footer_menu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #FFFFFF;
+}
+.footer_menu_title {
+    font-size: 25px;
+}
+.footer_menu_description {
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.footer_area {
+    display: flex;
+}
+.footer_area_item {
+    flex: 1;
+    color: #FFFFFF;
+}
+.footer_address_text {
+    color: #5c5c5c;
+    font-size: 13px;
+}
+.footer_address_icons {
+    display: flex;
+}
+.footer_address_icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    background-color: #2f2f2f;
+}
+.footer_copy {
+    border-top: 1px solid #5c5c5c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
 }
