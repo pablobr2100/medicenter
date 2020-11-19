@@ -23,6 +23,18 @@ header {
     display: flex;
     align-items: center;
 }
+.menu_mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.menu_mobile_line {
+    height: 3px;
+    background-color: #36a9e1;
+}
 
 nav ul,
 nav li {
@@ -52,7 +64,6 @@ nav a:hover {
     background-image: url('../images/img1.jpg');
     background-position: center;
     background-size: cover;
-    height: 670px;
 }
 .column {
     flex-direction: column;
@@ -79,6 +90,7 @@ nav a:hover {
     padding: 0;
     max-width: 350px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .banner_options {
     height: 210px;
@@ -147,6 +159,10 @@ nav a:hover {
     height: 3px;
     background-color: #36a9e1;
     margin-top: 10px;
+}
+.widget_body_news {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .flex {
@@ -332,4 +348,92 @@ footer {
     color: #5c5c5c;
     font-size: 12px;
     margin-top: 30px;
+}
+
+
+@media (max-width:800px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+    header {
+        height: auto;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    .logo {
+        margin: 20px;
+    }
+    .menu_mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .banner_headline {
+        padding: 20px;
+    }
+    .banner_headline h1 {
+        font-size: 55px;
+    }
+    .banner_headline h2 {
+        font-size: 17px;
+    }
+
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+ 
+    #geral {
+        height: auto;
+        flex-direction: column;
+    }
+    #geral .container {
+        display: flex;
+        flex-direction: column;
+    }
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+    .widget_body_news {
+        flex-direction: column;
+        width: 100%;
+    }
+    article {
+        width: 290px;
+        margin-right: 20px;
+    }
+    .department_container {
+        justify-content: space-between;
+    }
+    .department_items_column {
+        flex-direction: column;
+    }
+    .news3,
+    .news4 {
+        display: none;
+    }
+
+    .footer_menu {
+        flex-direction: column;
+    }
+    .footer_area {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer_copy {
+        padding-left: 20px;
+    }
 }

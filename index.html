@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector(".menu_mobile").addEventListener("click", function () {
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+
     <title>MediCenter</title>
 </head>
+
 <body>
-    
+
     <header>
         <div class="container">
             <div class="logo">
@@ -17,6 +31,11 @@
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menu_mobile">
+                        <div class="menu_mobile_line"></div>
+                        <div class="menu_mobile_line"></div>
+                        <div class="menu_mobile_line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="">home</a></li>
                         <li><a href="">blog</a></li>
@@ -41,14 +60,18 @@
                 <div class="banner1">
                     <div class="banner_title">Emergency Case</div>
                     <div class="banner_description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi sit ipsum nostrum amet voluptatum quod eveniet, quo, ipsam natus, explicabo consequuntur minus vero quaerat. Minima magni alias nulla incidunt ut.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi sit ipsum nostrum amet
+                        voluptatum quod eveniet, quo, ipsam natus, explicabo consequuntur minus vero quaerat. Minima
+                        magni alias nulla incidunt ut.
                     </div>
-                    <a href="">Read More</a>    
+                    <a href="">Read More</a>
                 </div>
                 <div class="banner2">
                     <div class="banner_title">Doctors Timetable</div>
                     <div class="banner_description">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A officiis optio officia accusantium ducimus consequuntur enim? Deserunt veritatis illum praesentium eaque rem obcaecati quia inventore odit doloremque nesciunt! Nostrum, sint!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A officiis optio officia accusantium
+                        ducimus consequuntur enim? Deserunt veritatis illum praesentium eaque rem obcaecati quia
+                        inventore odit doloremque nesciunt! Nostrum, sint!
                     </div>
                     <a href="">Read More</a>
                 </div>
@@ -78,10 +101,12 @@
             <section>
                 <div class="widget">
                     <div class="widget_title">
-                        <div class="widget_title_text"><h3>Latest News</h3></div>
+                        <div class="widget_title_text">
+                            <h3>Latest News</h3>
+                        </div>
                         <div class="widget_title_bar"></div>
                     </div>
-                    <div class="widget_body flex">
+                    <div class="widget_body_news">
 
                         <article>
                             <a href="">
@@ -93,10 +118,15 @@
                                     <img src="assets/images/dr.jpg" />
                                 </div>
                                 <div class="news_title">
-                                    Lorem ipsum dolor sit amet velum    
+                                    Lorem ipsum dolor sit amet velum
                                 </div>
                                 <div class="news_resume">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed at animi dolorum nisi aut laboriosam esse perferendis porro, odio totam inventore aliquid, recusandae tempore, possimus cupiditate assumenda modi! Facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ab aliquid vel dolores totam dolorem ratione omnis unde et esse reprehenderit at, error, temporibus numquam blanditiis neque minus, itaque impedit.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed at animi
+                                    dolorum nisi aut laboriosam esse perferendis porro, odio totam inventore aliquid,
+                                    recusandae tempore, possimus cupiditate assumenda modi! Facere? Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Maxime ab aliquid vel dolores totam dolorem
+                                    ratione omnis unde et esse reprehenderit at, error, temporibus numquam blanditiis
+                                    neque minus, itaque impedit.
                                 </div>
                             </a>
                         </article>
@@ -111,15 +141,20 @@
                                     <img src="assets/images/dr.jpg" />
                                 </div>
                                 <div class="news_title">
-                                    Lorem ipsum dolor sit amet velum    
+                                    Lorem ipsum dolor sit amet velum
                                 </div>
                                 <div class="news_resume">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed at animi dolorum nisi aut laboriosam esse perferendis porro, odio totam inventore aliquid, recusandae tempore, possimus cupiditate assumenda modi! Facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ab aliquid vel dolores totam dolorem ratione omnis unde et esse reprehenderit at, error, temporibus numquam blanditiis neque minus, itaque impedit.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed at animi
+                                    dolorum nisi aut laboriosam esse perferendis porro, odio totam inventore aliquid,
+                                    recusandae tempore, possimus cupiditate assumenda modi! Facere? Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Maxime ab aliquid vel dolores totam dolorem
+                                    ratione omnis unde et esse reprehenderit at, error, temporibus numquam blanditiis
+                                    neque minus, itaque impedit.
                                 </div>
                             </a>
                         </article>
 
-                        <article>
+                        <article class="new3">
                             <a href="">
                                 <div class="news_date">
                                     <div class="news_posted_at">12 DEC 12</div>
@@ -129,15 +164,20 @@
                                     <img src="assets/images/dr.jpg" />
                                 </div>
                                 <div class="news_title">
-                                    Lorem ipsum dolor sit amet velum    
+                                    Lorem ipsum dolor sit amet velum
                                 </div>
                                 <div class="news_resume">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed at animi dolorum nisi aut laboriosam esse perferendis porro, odio totam inventore aliquid, recusandae tempore, possimus cupiditate assumenda modi! Facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ab aliquid vel dolores totam dolorem ratione omnis unde et esse reprehenderit at, error, temporibus numquam blanditiis neque minus, itaque impedit.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed at animi
+                                    dolorum nisi aut laboriosam esse perferendis porro, odio totam inventore aliquid,
+                                    recusandae tempore, possimus cupiditate assumenda modi! Facere? Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Maxime ab aliquid vel dolores totam dolorem
+                                    ratione omnis unde et esse reprehenderit at, error, temporibus numquam blanditiis
+                                    neque minus, itaque impedit.
                                 </div>
                             </a>
                         </article>
 
-                        <article>
+                        <article class="new4">
                             <a href="">
                                 <div class="news_date">
                                     <div class="news_posted_at">12 DEC 12</div>
@@ -147,10 +187,15 @@
                                     <img src="assets/images/dr.jpg" />
                                 </div>
                                 <div class="news_title">
-                                    Lorem ipsum dolor sit amet velum    
+                                    Lorem ipsum dolor sit amet velum
                                 </div>
                                 <div class="news_resume">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed at animi dolorum nisi aut laboriosam esse perferendis porro, odio totam inventore aliquid, recusandae tempore, possimus cupiditate assumenda modi! Facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ab aliquid vel dolores totam dolorem ratione omnis unde et esse reprehenderit at, error, temporibus numquam blanditiis neque minus, itaque impedit.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed at animi
+                                    dolorum nisi aut laboriosam esse perferendis porro, odio totam inventore aliquid,
+                                    recusandae tempore, possimus cupiditate assumenda modi! Facere? Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Maxime ab aliquid vel dolores totam dolorem
+                                    ratione omnis unde et esse reprehenderit at, error, temporibus numquam blanditiis
+                                    neque minus, itaque impedit.
                                 </div>
                             </a>
                         </article>
@@ -162,29 +207,38 @@
             <aside>
                 <div class="widget">
                     <div class="widget_title">
-                        <div class="widget_title_text"><h3>Departments</h3></div>
+                        <div class="widget_title_text">
+                            <h3>Departments</h3>
+                        </div>
                         <div class="widget_title_bar"></div>
                     </div>
                     <div class="widget_body">
                         <div class="department_container">
-                            <div class="department_items"></div>
-                            <div class="department_items"></div>
-                            <div class="department_items"></div>
-                            <div class="department_items"></div>
-                            <div class="department_items"></div>
-                            <div class="department_items"></div>
+                            <div class="department_items_column">
+                                <div class="department_items"></div>
+                                <div class="department_items"></div>
+                                <div class="department_items"></div>
+                            </div>
+                            <div class="department_items_column">
+                                <div class="department_items"></div>
+                                <div class="department_items"></div>
+                                <div class="department_items"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="widget">
                     <div class="widget_title">
-                        <div class="widget_title_text"><h3>Make An Appointment</h3></div>
+                        <div class="widget_title_text">
+                            <h3>Make An Appointment</h3>
+                        </div>
                         <div class="widget_title_bar"></div>
                     </div>
                     <div class="widget_body">
                         <div class="appointment_items">
                             <div class="appointment_text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellendus nobis nesciunt laborum.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellendus nobis nesciunt
+                                laborum.
                             </div>
                         </div>
                         <div class="appointment_items">
@@ -194,7 +248,7 @@
                         <div class="appointment_items">
                             <div class="appointment_icon"></div>
                             <div class="appointment_contact">
-                                by e-mail: <a href="">medicenter@email.com</a> 
+                                by e-mail: <a href="">medicenter@email.com</a>
                             </div>
                         </div>
                         <div class="appointment_items">
@@ -244,12 +298,15 @@
                 <div class="footer_area_item">
                     <div class="widget">
                         <div class="widget_title">
-                            <div class="widget_title_text"><h3>MediCenter Clinic</h3></div>
+                            <div class="widget_title_text">
+                                <h3>MediCenter Clinic</h3>
+                            </div>
                             <div class="widget_title_bar"></div>
                         </div>
                         <div class="widget_body">
                             <div class="footer_address_text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing. Nemo temporibus alias possimus nisi laborum laboriosam.
+                                Lorem ipsum dolor sit amet consectetur adipisicing. Nemo temporibus alias possimus nisi
+                                laborum laboriosam.
                             </div>
                             <div class="footer_address_info">
                                 <div class="footer_address_info_left">
@@ -271,18 +328,21 @@
                                 <div class="footer_address_icon"></div>
                             </div>
                         </div>
-                    </div>        
+                    </div>
                 </div>
                 <div class="footer_area_item">
                     <div class="widget">
                         <div class="widget_title">
-                            <div class="widget_title_text"><h3>Latest Post</h3></div>
+                            <div class="widget_title_text">
+                                <h3>Latest Post</h3>
+                            </div>
                             <div class="widget_title_bar"></div>
                         </div>
                         <div class="widget_body">
                             <div class="footer_post">
                                 <div class="footer_post_text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, sunt. Quos repudiandae non neque.
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, sunt. Quos
+                                    repudiandae non neque.
                                 </div>
                                 <div class="footer_date">
                                     6 years ago
@@ -298,26 +358,31 @@
                             </div>
                             <div class="footer_post">
                                 <div class="footer_post_text">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae qui rem natus nemo dolorum.
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae qui rem natus
+                                    nemo dolorum.
                                 </div>
                                 <div class="footer_date">
                                     3 years ago
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
                 <div class="footer_area_item">
                     <div class="widget">
                         <div class="widget_title">
-                            <div class="widget_title_text"><h3>Latest Tweets</h3></div>
+                            <div class="widget_title_text">
+                                <h3>Latest Tweets</h3>
+                            </div>
                             <div class="widget_title_bar"></div>
                         </div>
                         <div class="widget_body">
                             <div class="footer_tweets">
                                 <div class="footer_tweets">
                                     <div class="footer_tweets_text">
-                                        Minima iusto consectetur animi, ipsum, harum quo corrupti, dolores qui ea vitae necessitatibus doloremque neque laborum? Exerci... <a href="">twe.et/Abc123dF4</a> 
+                                        Minima iusto consectetur animi, ipsum, harum quo corrupti, dolores qui ea vitae
+                                        necessitatibus doloremque neque laborum? Exerci... <a
+                                            href="">twe.et/Abc123dF4</a>
                                     </div>
                                     <div class="footer_date">
                                         3 years ago
@@ -325,7 +390,8 @@
                                 </div>
                                 <div class="footer_tweets">
                                     <div class="footer_tweets_text">
-                                        Deleniti nesciunt consequatur esse perspiciatis similique maiores, suscipit neque, doloremque iusto ex nobis dolore. <a href="">twe.et/Abc123dF4</a>
+                                        Deleniti nesciunt consequatur esse perspiciatis similique maiores, suscipit
+                                        neque, doloremque iusto ex nobis dolore. <a href="">twe.et/Abc123dF4</a>
                                     </div>
                                     <div class="footer_date">
                                         3 years ago
@@ -333,7 +399,9 @@
                                 </div>
                                 <div class="footer_tweets">
                                     <div class="footer_tweets_text">
-                                        Accusamus repellendus, doloremque blanditiis odit dignissimos ratione et, deserunt vitae inventore, esse sapiente aut sint? <a href="">twe.et/Abc123dF4</a>
+                                        Accusamus repellendus, doloremque blanditiis odit dignissimos ratione et,
+                                        deserunt vitae inventore, esse sapiente aut sint? <a
+                                            href="">twe.et/Abc123dF4</a>
                                     </div>
                                     <div class="footer_date">
                                         3 years ago
@@ -341,7 +409,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
 
@@ -353,4 +421,5 @@
     </footer>
 
 </body>
+
 </html>
